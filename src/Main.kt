@@ -1,14 +1,23 @@
+import jdk.internal.lang.stable.StableUtil.array
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
-
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+    val arr = (1..10).toList().toIntArray()
+    for(i in arr.size -9 .. 10 step 2){
+        println(arr[i])
     }
+
+    val numbers = arrayOf(-5, 0, 3, 12, -1, 10, 9)
+
+    for (number in numbers) {
+        when {
+            number < 0 -> println("negative")
+            number == 0 -> println("zero")
+            number in 1..9 -> println("small")
+            else -> println("big")
+        }
+    }
+
+
 }
