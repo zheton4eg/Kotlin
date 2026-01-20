@@ -1,0 +1,18 @@
+Subject: [PATCH] done
+---
+Index: src/Main.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.kt b/src/Main.kt
+--- a/src/Main.kt	(revision b039d86fe6d79bf4f7d306cbc725a134ddd9bff4)
++++ b/src/Main.kt	(date 1768932069035)
+@@ -1,7 +1,4 @@
+-import jdk.internal.lang.stable.StableUtil.array
+ 
+-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+ fun main() {
+     val arr = (1..10).toList().toIntArray()
+     for(i in arr.size -9 .. 10 step 2){

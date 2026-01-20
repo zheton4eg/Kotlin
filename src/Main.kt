@@ -1,7 +1,4 @@
-import jdk.internal.lang.stable.StableUtil.array
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     val arr = (1..10).toList().toIntArray()
     for(i in arr.size -9 .. 10 step 2){
